@@ -37,7 +37,7 @@ namespace WebApplication3
                 user.UserName = "vreal";
                 user.Email = "vreal.foto@gmail.com";
 
-                string userPWD = "!Qwepoi12";
+                string userPWD = "!Qwepoi13";
 
                 var chkUser = UserManager.Create(user, userPWD);
 
