@@ -1,0 +1,66 @@
+﻿@model WebApplication3.Models.Event
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NazwaWydarzenia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NazwaWydarzenia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OpisWydarzenia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OpisWydarzenia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MiejsceWydarzenia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MiejsceWydarzenia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataWydarzenia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataWydarzenia)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GodzinaRozpoczeciaImprezy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GodzinaRozpoczeciaImprezy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CenaBiletu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CenaBiletu)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

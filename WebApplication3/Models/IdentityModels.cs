@@ -29,5 +29,7 @@ namespace WebApplication3.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<WebApplication3.Models.Event> Events { get; set; }
     }
 }
